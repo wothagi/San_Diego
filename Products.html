@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - San Diego</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; }
+        .navbar { display: flex; align-items: center; padding: 20px; }
+        nav { flex: 1; text-align: right; }
+        nav ul { display: inline-block; list-style-type: none; }
+        nav ul li { display: inline-block; margin-right: 20px; }
+        a { text-decoration: none; color: #555; }
+        .container { max-width: 1300px; margin: auto; padding: 0 25px; }
+
+        .small-container { max-width: 1080px; margin: auto; padding: 0 25px; }
+        .row { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-around; }
+        .row-2 { justify-content: space-between; margin: 100px auto 50px; }
+        
+        select { border: 1px solid #ff523b; padding: 5px; outline: none; }
+        
+        .col-4 { flex-basis: 25%; padding: 10px; min-width: 200px; margin-bottom: 50px; transition: transform 0.5s; }
+        .col-4 img { width: 100%; }
+        .title { text-align: center; margin: 0 auto 80px; position: relative; line-height: 60px; color: #555; }
+        h4 { color: #555; font-weight: normal; }
+        .rating .fa { color: #ff523b; }
+        .col-4:hover { transform: translateY(-5px); }
+
+        /* Pagination */
+        .page-btn { margin: 0 auto 80px; text-align: center; }
+        .page-btn span { display: inline-block; border: 1px solid #ff523b; margin-left: 10px; width: 40px; height: 40px; text-align: center; line-height: 40px; cursor: pointer; }
+        .page-btn span:hover { background: #ff523b; color: #fff; }
+
+        /* Footer */
+        .footer { background: #000; color: #8a8a8a; padding: 60px 0 20px; }
+        .footer-col-2 { text-align: center; }
+        .footer-col-2 img { width: 180px; margin-bottom: 20px; }
+        hr { border: none; background: #b5b5b5; height: 1px; margin: 20px 0; }
+        .copyright { text-align: center; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="HOME PAGE.html"><img src="San Diego - Text.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="HOME PAGE.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="Shopping Cart.png" width="30px" height="30px"></a>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by price</option>
+                <option>Sort by popularity</option>
+                <option>Sort by rating</option>
+                <option>Sort by sale</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="Sony a6400 Mirrorless Camera.jpg">
+                <h4>Sony a6400 Mirrorless Camera</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                <p>₱51,999.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Continuous Constant Soft Box Video Lighting Set 2.jpg">
+                <h4>Soft Box Video Lighting Set</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+                </div>
+                <p>₱13,874.95</p>
+            </div>
+            <div class="col-4">
+                <img src="Professional Quad Tube Aluminium 72 Tripod.jpg">
+                <h4>Professional Quad Tube Tripod</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                <p>₱12,005.87</p>
+            </div>
+            <div class="col-4">
+                <img src="YONGNUO Lens.jpg">
+                <h4>Yongnuo Lens (Large Aperture)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <p>₱4,500.00</p>
+            </div>
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-col-2">
+                <a href="HOME PAGE.html"><img src="San Diego - Text.png"></a>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2026 - San Diego</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Diego - Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #555;
+        }
+        p {
+            color: #555;
+        }
+        .container {
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .col-2 {
+            flex-basis: 50%;
+            min-width: 300px;
+        }
+        .col-2 img {
+            max-width: 100%;
+            padding: 50px 0;
+        }
+        .col-2 h1 {
+            font-size: 50px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff523b;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: background 0.5s;
+        }
+        .btn:hover {
+            background: #563434;
+        }
+        .header {
+            background: radial-gradient(#fff, #ffd6d6);
+        }
+        .categories {
+            margin: 70px 0;
+        }
+        .col-3 {
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        .col-3 img {
+            width: 100%;
+        }
+        .small-container {
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .col-4 {
+            flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+        }
+        .col-4 img {
+            width: 100%;
+        }
+        .title {
+            text-align: center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: #555;
+        }
+        .title::after {
+            content: '';
+            background: #ff523b;
+            width: 80px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h4 {
+            color: #555;
+            font-weight: normal;
+        }
+        .col-4 p {
+            font-size: 14px;
+        }
+        .rating .fa {
+            color: #ff523b;
+        }
+        .col-4:hover {
+            transform: translateY(-5px);
+        }
+        /* Offer Section */
+        .offer {
+            background: radial-gradient(#fff, #ffd6d6);
+            margin-top: 80px;
+            padding: 30px 0;
+        }
+        .col-2 .offer-img {
+            padding: 50px;
+        }
+        small {
+            color: #555;
+        }
+        /* Footer */
+        .footer {
+            background: #000;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding: 60px 0 20px;
+        }
+        .footer p {
+            color: #8a8a8a;
+        }
+        .footer h3 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .footer-col-2 {
+            flex: 1;
+            text-align: center;
+        }
+        .footer-col-2 img {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+        .footer hr {
+            border: none;
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0;
+        }
+        .copyright {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="HOME PAGE.html"><img src="San Diego - Text.png" width="125px" alt="San Diego Logo"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="HOME PAGE.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="Shopping Cart.png" width="30px" height="30px"></a>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Capture Every Frame <br> With Precision!</h1>
+                    <p>Great films aren't just shot; they are crafted with the right tools. <br> Elevate your storytelling with professional-grade gear.</p>
+                    <a href="account.html" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="Film Strip.png" alt="San Diego Banner">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3"><img src="Filmmaking Cameras (category-1).jpg"></div>
+                <div class="col-3"><img src="Audio and Lighting Gear (category-2).jpg"></div>
+                <div class="col-3"><img src="Video Editing Station (category-3).jpg"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="Sony a6400 Mirrorless Camera.jpg">
+                <h4>Sony a6400 Mirrorless Camera</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                </div>
+                <p>₱51,999.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Continuous Constant Soft Box Video Lighting Set 2.jpg">
+                <h4>Continuous Constant Soft Box Video Lighting Set</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+                </div>
+                <p>₱13,874.95</p>
+            </div>
+        </div>
+
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="Professional Quad Tube Aluminium 72 Tripod.jpg">
+                <h4>Professional Quad Tube Tripod</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>
+                </div>
+                <p>₱12,005.87</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="YONGNUO Lens.jpg" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on San Diego Store</p>
+                    <h1>Yongnuo Lens</h1>
+                    <small>High quality aperture lens for professional cinematography.</small><br>
+                    <a href="products.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-col-2">
+                <a href="HOME PAGE.html"><img src="San Diego - Text.png"></a>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2026 - San Diego</p>
+        </div>
+    </div>
+
+</body>
+</html>

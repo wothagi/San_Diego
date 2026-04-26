@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Diego - Account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #555;
+        }
+        .container {
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        /* Account Page Section Styles */
+        .account-page {
+            padding: 50px 0;
+            background: radial-gradient(#fff, #ffd6d6);
+        }
+        .form-container {
+            background: #fff;
+            width: 300px;
+            height: 400px;
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            margin: auto;
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .form-btn {
+            display: inline-block;
+        }
+        .form-container span {
+            font-weight: bold;
+            padding: 0 10px;
+            color: #555;
+            cursor: pointer;
+            width: 100px;
+            display: inline-block;
+        }
+        #Indicator {
+            width: 100px;
+            border: none;
+            background: #ff523b;
+            height: 3px;
+            margin-top: 8px;
+            transform: translateX(100px);
+            transition: transform 1s;
+        }
+        .form-container form {
+            max-width: 300px;
+            padding: 0 20px;
+            position: absolute;
+            top: 130px;
+            transition: transform 1s;
+        }
+        form input {
+            width: 100%;
+            height: 30px;
+            margin: 10px 0;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff523b;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 10px 0;
+            border-radius: 30px;
+            transition: background 0.5s;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #563434;
+        }
+        form a {
+            font-size: 12px;
+            color: #555;
+        }
+
+        #LoginForm {
+            left: -300px;
+        }
+        #RegForm {
+            left: 0;
+        }
+
+        /* Footer */
+        .footer {
+            background: #000;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding: 60px 0 20px;
+        }
+        .footer-col-2 {
+            text-align: center;
+        }
+        .footer-col-2 img {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0;
+        }
+        .copyright {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="HOME PAGE.html"><img src="San Diego - Text.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="HOME PAGE.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="Shopping Cart.png" width="30px" height="30px"></a>
+        </div>
+    </div>
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row" style="display: flex; align-items: center; flex-wrap: wrap; justify-content: space-around;">
+                <div style="flex-basis: 50%; min-width: 300px;">
+                    <img src="Film Strip.png" width="100%">
+                </div>
+                <div style="flex-basis: 50%; min-width: 300px;">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-col-2">
+                <a href="HOME PAGE.html"><img src="San Diego - Text.png"></a>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2026 - San Diego</p>
+        </div>
+    </div>
+
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+
+        function login() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+
+</body>
+</html>
